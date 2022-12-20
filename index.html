@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Notifications page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <section class="container">
+    <article class="notifications">
+      <h5>Notifications <span id="span3"></span></h5>
+      <p id="allread">Mark all as read</p>
+    </article>
+
+    <article class="profile">
+      <div class="unread">
+        <img src="./assets/avatar-mark-webber.webp" alt="">
+        
+          <div class="actime">
+            <div class="inlineblock">
+              <p class="name">Mark Webber<span class="reaction">
+                 reacted to your recent post<span class="secondspan">
+                   My first tournament today! <span class="unreadDot" id="dot">•</span></span></span></p>
+            </div> 
+            <div class="time"> 1m ago</div>
+          </div>
+        </div>      
+    </article>
+
+    <article class="profile">
+      <div class="unread">
+        <img src="./assets/avatar-angela-gray.webp" alt="">
+        
+          <div class="actime">
+            <div class="inlineblock">
+              <p class="name">Angela Gray<span class="reaction"> followed you <span class="unreadDot" id="dot">•</span></span></p>
+            </div> 
+            <div class="time">5m ago</div>
+          </div>
+        </div>      
+    </article>
+
+    <article class="profile">
+      <div  class="unread">
+        <img src="./assets/avatar-jacob-thompson.webp" alt="">
+        
+          <div class="actime">
+            <div class="inlineblock">
+                <p class="name">Jacob Thompson<span class="reaction"> has joined your group
+                  <span class="chess">Chess Club</span></span><span class="unreadDot" id="dot">•</span></p>
+              
+              </div>
+            <div class="time"> 1 day ago</div>
+          </div>
+        </div>      
+    </article>
+
+    <article class="profile">
+      <div class="notime">
+        <img src="./assets/avatar-rizky-hasanuddin.webp" alt="">
+        
+          <div class="actime">
+            <div class="inlineblock">
+              <p class="name">Rizky Hasanuddin<span class="reaction"> sent you a private message
+                </span></p>
+            </div> 
+            <div class="time"> 5 days ago</div>
+            <div class="message-box">
+              <p>Hello, thanks for setting up the Chess Club. I've been a member for a few weeks now and 
+                I'm already having lots of fun and improving my game.</p>
+            </div>
+          </div>
+        </div>      
+    </article>
+
+
+
+    <article class="profile">
+      <div class="nime"> 
+      <div class="notime">
+        <img src="./assets/avatar-kimberly-smith.webp" alt="">         
+          <div class="actime">
+              <div class="flex">
+                <div class="inlineblock__kim">
+                  <p class="name">Kimberly Smith<span class="reaction"> commented on your picture</span></p>
+              </div>
+              </div>
+              <div class="time">1 week ago</div>   
+          </div>
+
+      </div>
+               
+      
+          <div class="commentpics"><img src="./assets/image-chess.webp" alt=""></div> 
+        </div>      
+    </article>
+
+    <article class="profile">
+      <div class="notime">
+        <img src="./assets/avatar-nathan-peterson.webp" alt="">
+        
+          <div class="actime">
+            <div class="inlineblock">
+              <p class="name">Nathan Peterson<span class="reaction">
+                reacted to your recent post<span class="strategies">
+                  5 end-game strategies to increase your win rate</span></span></p>
+            </div> 
+            <div class="time"> 2 weeks ago</div>
+          </div>
+        </div>      
+    </article>
+
+    <article class="profile" id="annakim">
+      <div class="notime">
+        <img src="./assets/avatar-anna-kim.webp" alt="">
+        
+          <div class="actime">
+            <div class="inlineblock">
+              <p class="name">Anna Kim<span class="reaction"> left the group
+                <span class="chess">Chess Club</span></span></p>
+            </div> 
+            <div class="time"> 2 weeks ago</div>
+          </div>
+        </div>      
+    </article>
+    
+  </section>
+
+ 
+</body>
+<script src="script.js"></script>
+</html>

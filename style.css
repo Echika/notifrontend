@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+:root {
+
+--red: hsl(1, 90%, 64%);
+--blue: hsl(219, 85%, 26%);
+
+--white: hsl(0, 0%, 100%);
+--very-light-grayish-blue: hsl(210, 60%, 98%);
+--light-grayish-blue-1: hsl(211, 68%, 94%);
+--light-grayish-blue-2: hsl(205, 33%, 90%);
+--grayish-blue: hsl(219, 14%, 63%);
+--dark-grayish-blue: hsl(219, 12%, 42%);
+--very-dark-blue: hsl(224, 21%, 14%);
+
+
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 100vw;
+    max-width: 1440px;
+    min-height: 650px;
+    height: 100vh;
+}
+
+p {
+    font-size:16px;
+}
+
+section{   background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  
+}
+
+.notifications {
+    display: flex;
+    width: 80%;
+    justify-content: space-between; 
+    margin: 20px auto
+}
+
+
+.notifications span {
+    background-color: hsl(219, 85%, 26%);
+    color:hsl(0, 0%, 100%);
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+}
+
+.notifications h5 {
+   font-size: 15px;
+}
+
+.notifications p {
+    font-size: 13px;
+    color:hsl(219, 12%, 42%);
+}
+
+#allread {
+    cursor: pointer
+}
+
+
+.name {
+    font-weight: 800;
+    font-size: 13px;
+    cursor: pointer;  
+}
+
+.name:hover {
+    color:hsl(219, 85%, 26%)
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    width: 80%;
+}
+
+
+.actions {  
+    font-weight: 800;
+    color: hsl(224, 21%, 14%);
+}
+
+.profile img {
+   height: 100%;
+   width: 35px;
+   cursor: pointer;
+}
+
+
+.actime {
+    margin: 0 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reaction {
+    font-weight: 500;
+    color: hsl(219, 12%, 42%)
+}
+
+.notime {
+    display: flex;   
+}
+
+.secondspan {
+font-weight: 800;
+color:hsl(219, 85%, 26%)
+}
+
+.chess {
+    font-weight: 800;
+    color: hsl(219, 12%, 42%);
+}
+
+.strategies {
+    color: hsl(219, 12%, 42%);
+    font-weight: 800;
+    font-size: 12px
+}
+
+#unread .chess {
+    color:hsl(219, 85%, 26%)
+}
+
+.time {
+    color: hsl(219, 14%, 63%);
+    font-size: 13px;
+    margin-top: 2px;
+}
+
+.nime {
+    display: flex;
+    justify-content: space-between
+}
+
+.unread {
+    border-radius: 5px; 
+    cursor: pointer;
+    background-color: hsl(210, 60%, 98%);
+    display: inline-flex;   
+}
+
+.unreadDot {
+    color: red;
+    display: inline-block;
+}
+
+.dot {
+    font-weight: 900;
+    color: red;
+    text-align: center;
+    display: inline;
+    align-items: center;
+    height: 15px;
+    width: 15px;        
+}
+
+
+
+
+
+.message-box {
+    border: 1px solid hsl(219, 12%, 42%, .3);
+    border-radius: 5px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: all 0.5 ease-in-out
+}
+
+.message-box:hover {
+     background-color: hsl(211, 68%, 94%)
+}
+
+#unread:hover {
+    background-color:hsla(211, 68%, 94%, .4);
+}
+
+.message-box p {
+    padding: 15px;
+    font-size: 13px;
+    color: hsl(219, 12%, 42%);
+    font-weight: 400;
+}
+
+.inlineblock {
+    display: flex;
+}
+
+
+
+.flex {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex .inlineblock .name {
+    font-size: 13px;
+}
+
+.flex .commentpics {
+    height: 31px;
+    cursor: pointer;
+}
+
+.inlineblock__kim {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+#annakim {
+    margin-bottom: 20px;
+}
+
+/*desktop view*/
+
+@media screen and (min-width: 800px) {
+    body {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: hsl(211, 68%, 94%, .4)
+    }
+
+    section {
+        width: 700px;
+        margin:  auto 200px;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    .notifications {
+        display: flex;
+        width: 80%;
+        justify-content: space-between; 
+        margin: 30px auto
+    }
+    
+    
+    .notifications span {
+        padding: 3px 12px;
+        margin-left: 7px;
+    }
+    
+    .notifications h5 {
+       font-size: 18px;
+    }
+    
+    .notifications p {
+        font-size: 15px;
+    }
+
+    .name {
+        font-weight: 800;
+        font-size: 17px;  
+    }
+    
+    .profile {
+        margin: 10px;
+    }
+    
+    
+    .actions {  
+        font-weight: 800;
+        color: hsl(224, 21%, 14%);
+
+    }
+    
+    .profile img {
+       width: 42px;
+    }
+    
+    .actime {
+       margin: 0 25px;
+      display: flex;
+    
+    }
+    
+    
+    .strategies {
+        font-size: 16px
+    }
+    
+    .time {
+        color: hsl(219, 14%, 63%);
+        font-size: 15px;
+        margin-top: 5px;
+    }
+
+    .message-box {
+        border: 1px solid hsl(219, 12%, 42%, .3);
+        border-radius: 5px;
+        margin: 15px 0;
+    }
+    
+    #unread:hover {
+        background-color:hsla(211, 68%, 94%, .4);
+    }
+    
+    .message-box p {
+        padding: 15px;
+        font-size: 13px;
+    }
+    
+    .notime {
+        display: flex;
+    }
+    
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .flex .inlineblock .name {
+        font-size: 15px;
+    }
+    
+    .flex .commentpics {
+        height: 30px;
+        
+    }
+    
+    .inlineblock__kim {
+        gap: 56px;
+    }
+    
+    #annakim {
+        margin-bottom: 20px;
+    }
+    
+    
+}
